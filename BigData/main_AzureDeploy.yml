@@ -3,7 +3,7 @@
   connection: local
   gather_facts: false
   vars:
-      dataFactoryName: "{{ ansible_env.dataFactoryName }}"
+      #dataFactoryName: "{{ ansible_env.dataFactoryName }}"
       Storagekey: "{{ ansible_env.Storagekey }}"
       spkey: "{{ ansible_env.spkey }}"
       servicePrincipalId: "{{ ansible_env.servicePrincipalId }}"
