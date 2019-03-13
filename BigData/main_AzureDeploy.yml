@@ -15,34 +15,34 @@
     environment: "{{ ansible_env.environment }}"
     resourcesgpname: "{{ ansible_env.resourcesgpname }}"
     location: eastus2
-    templateLink: 'https://raw.githubusercontent.com/sangaml/testing_repo/master/BigData/maindeploy.json'
+    templateLink: 'https://raw.githubusercontent.com/jitusonawane/testing_repo/master/BigData/maindeploy.json'
 
   tasks:
   - name: Deploy ARM template
     azure_rm_deployment:
-    location: "eastus2"
-    state: present
-    parameters: 
-      dataFactoryName: 
-        value: "{{ var_dataFactoryName }}"
-      Storagekey: 
-        value: "{{ var_Storagekey }}"
-      spkey: 
-        value: "{{ var_spkey }}"
-      servicePrincipalId: 
-        value: "{{ var_servicePrincipalId }}"
-      hostSubscriptionId: 
-        value: "{{ var_hostSubscriptionId }}"
-      tenant: 
-        value: "{{ var_tenant }}"
-      ClusterUserName: 
-        value: "{{ var_ClusterUserName }}"
-      ClusterPassword: 
-        value: "{{ var_ClusterPassword }}"
-      sqlseverkey: 
-        value: "{{ var_sqlseverkey }}"
-      environment: 
-        value: "{{ var_environment }}"
-      resourcesgpname: 
-        value: "{{ var_resourcesgpname }}"                 
-    template_link: "https://raw.githubusercontent.com/sangaml/testing_repo/master/BigData/maindeploy.json"
+      location: "eastus2"
+      state: present
+      parameters: 
+        dataFactoryName: 
+          value: "{{ dataFactoryName }}"
+        Storagekey: 
+          value: "{{ Storagekey }}"
+        spkey: 
+          value: "{{ spkey }}"
+        servicePrincipalId: 
+          value: "{{ servicePrincipalId }}"
+        hostSubscriptionId: 
+          value: "{{ hostSubscriptionId }}"
+        tenant: 
+          value: "{{ tenant }}"
+        ClusterUserName: 
+          value: "{{ ClusterUserName }}"
+        ClusterPassword: 
+          value: "{{ ClusterPassword }}"
+        sqlseverkey: 
+          value: "{{ sqlseverkey }}"
+        environment: 
+          value: "{{ environment }}"
+        resourcesgpname: 
+          value: "{{ resourcesgpname }}"                 
+      template_link: "https://raw.githubusercontent.com/jitusonawane/testing_repo/master/BigData/maindeploy.json"
