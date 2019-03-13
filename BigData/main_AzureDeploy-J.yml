@@ -3,17 +3,17 @@
   connection: local
   gather_facts: false
   vars:
-      dataFactoryName: "{{ dataFactoryName }}"
-      Storagekey: "{{ Storagekey }}"
-      spkey: "{{ spkey }}"
-      servicePrincipalId: "{{ servicePrincipalId }}"
-      hostSubscriptionId: "{{ hostSubscriptionId }}"
-      tenant: "{{ tenant }}"
-      ClusterUserName: "{{ ClusterUserName }}"
-      ClusterPassword: "{{ ClusterPassword }}"
-      sqlseverkey: "{{ sqlseverkey }}"
-      environment: "{{ environment }}"
-      resourcesgpname: "{{ resourcesgpname }}"
+      dataFactoryName: "{{ ansible_env.dataFactoryName }}"
+      Storagekey: "{{ ansible_env.Storagekey }}"
+      spkey: "{{ ansible_env.spkey }}"
+      servicePrincipalId: "{{ ansible_env.servicePrincipalId }}"
+      hostSubscriptionId: "{{ ansible_env.hostSubscriptionId }}"
+      tenant: "{{ ansible_env.tenant }}"
+      ClusterUserName: "{{ ansible_env.ClusterUserName }}"
+      ClusterPassword: "{{ ansible_env.ClusterPassword }}"
+      sqlseverkey: "{{ ansible_env.sqlseverkey }}"
+      environment: "{{ ansible_env.environment }}"
+      resourcesgpname: "{{ ansible_env.resourcesgpname }}"
       location: eastus2
       templateLink: 'https://raw.githubusercontent.com/jitusonawane/testing_repo/master/BigData/maindeploy.json'
   tasks:
