@@ -1,7 +1,7 @@
 - name: CREATE ARM Deployment PLAYBOOK
   hosts: localhost
   connection: local
-  gather_facts: False
+  gather_facts: no
   vars:
     dataFactoryName: "{{ ansible_env.dataFactoryName }}"
     Storagekey: "{{ ansible_env.Storagekey }}"
